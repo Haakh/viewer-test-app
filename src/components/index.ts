@@ -4,3 +4,4 @@ export * from './Content';
 export * from './Button';
 export * from './Message';
 export * from './Separator';
+export * from './TabBar';

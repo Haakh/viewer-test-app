@@ -13,7 +13,7 @@ export default class AuthLoading extends React.Component<AuthLoadingProps> {
     // this.props.navigation.navigate(
     //   this.props.currentUser ? RootStackRoutes.App : RootStackRoutes.AuthStack,
     // );
-    this.props.navigation.navigate(false ? RootStackRoutes.App : RootStackRoutes.AuthStack);
+    this.props.navigation.navigate(true ? RootStackRoutes.App : RootStackRoutes.AuthStack);
   }
 
   render() {
