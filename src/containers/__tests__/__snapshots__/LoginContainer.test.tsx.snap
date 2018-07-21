@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  automaticallyAdjustContentInsets={false}
+  contentContainerStyle={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "grey",
+        "flex": 1,
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      Object {
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+  contentInset={
+    Object {
+      "bottom": 0,
+    }
+  }
+  enableAutomaticScroll={true}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  getScrollResponder={[Function]}
+  handleOnScroll={[Function]}
+  keyboardDismissMode="interactive"
+  keyboardOpeningTime={250}
+  keyboardSpace={0}
+  onScroll={[Function]}
+  resetKeyboardSpace={[Function]}
+  scrollEventThrottle={1}
+  scrollForExtraHeightOnAndroid={[Function]}
+  scrollIntoView={[Function]}
+  scrollToEnd={[Function]}
+  scrollToFocusedInput={[Function]}
+  scrollToPosition={[Function]}
+  showsVerticalScrollIndicator={true}
+  style={
+    Object {
+      "backgroundColor": "grey",
+    }
+  }
+  update={[Function]}
+  viewIsInsideTabBar={false}
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignSelf": "stretch",
+              "marginTop": 16,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "grey",
+                "fontSize": 13,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "grey",
+              },
+            ]
+          }
+        >
+          Enter your registered email address
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          keyboardType="email-address"
+          label="Enter your registered email address"
+          labelStyle={
+            Object {
+              "color": "grey",
+            }
+          }
+          onChangeText={[Function]}
+          placeholder="Email address"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "borderColor": "#eee",
+                "borderRadius": 3,
+                "borderWidth": 1,
+                "height": 45,
+                "justifyContent": "center",
+                "marginTop": 1,
+                "paddingLeft": 11,
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignSelf": "stretch",
+              "marginTop": 16,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "grey",
+                "fontSize": 13,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "grey",
+              },
+            ]
+          }
+        >
+          Enter your password
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          label="Enter your password"
+          labelStyle={
+            Object {
+              "color": "grey",
+            }
+          }
+          onChangeText={[Function]}
+          placeholder="Password"
+          secureTextEntry={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "borderColor": "#eee",
+                "borderRadius": 3,
+                "borderWidth": 1,
+                "height": 45,
+                "justifyContent": "center",
+                "marginTop": 1,
+                "paddingLeft": 11,
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "borderRadius": 4,
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "marginRight": 16,
+            "marginTop": 10,
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 15,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "blue",
+              },
+            ]
+          }
+        >
+          Forgot password? Reset here
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "blue",
+            "borderColor": "blue",
+            "borderRadius": 2,
+            "borderWidth": 2,
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "marginRight": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 15,
+                "fontWeight": "500",
+              },
+              Object {
+                "color": "white",
+              },
+            ]
+          }
+        >
+          SignIn
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 5,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
