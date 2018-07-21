@@ -1,6 +1,6 @@
 import HomeContainer from './HomeContainer';
 export * from './HomeContainerPropsType';
 export * from './HomeContainerStateType';
-export * from './HomeContainerStyles';
+export * from './Styles';
 
 export default HomeContainer;
