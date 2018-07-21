@@ -1,13 +1,6 @@
 import * as React from 'react';
 import { View } from 'react-native';
-import {
-  NavigationBarTitle,
-  Input,
-  Content,
-  Button,
-  ButtonStylesType,
-  Message,
-} from '../../components';
+import { NavigationBarTitle, Input, Content, Button, ButtonStylesType } from '../../components';
 import { LoginContainerPropsType, LoginContainerStateType, LoginContainerStyles } from '.';
 import { RootStackRoutes } from '../../utils';
 

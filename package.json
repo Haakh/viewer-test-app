@@ -18,16 +18,17 @@
     "react-navigation": "^2.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.47",
-    "@types/jest": "23.1.4",
+    "@babel/core": "7.0.0-beta.54",
+    "@types/jest": "23.3.0",
     "@types/react": "16.4.6",
-    "@types/react-native": "0.55.28",
+    "@types/react-native": "0.56.4",
     "@types/react-navigation": "^2.0.11",
     "@types/react-test-renderer": "16.0.1",
     "babel-core": "6.26.3",
     "babel-jest": "23.4.0",
     "babel-preset-react-native": "5",
     "jest": "^23.4.1",
+    "react-addons-test-utils": "^15.6.2",
     "react-native-dotenv": "https://github.com/adamivancza/react-native-dotenv",
     "react-native-typescript-transformer": "1.2.10",
     "react-test-renderer": "16.4.1",
@@ -39,14 +40,20 @@
   },
   "jest": {
     "preset": "react-native",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.jest.json"
+      }
+    },
     "moduleFileExtensions": [
       "ts",
       "tsx",
       "js"
     ],
     "transform": {
-      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
-      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "testPathIgnorePatterns": [
@@ -56,7 +63,8 @@
     "cacheDirectory": ".jest/cache",
     "setupFiles": [
       "./node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
-      "./node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
+      "./node_modules/appcenter-crashes/test/AppCenterCrashesMock.js",
+      "./node_modules/appcenter/test/AppCenterMock.js"
     ]
   }
 }
