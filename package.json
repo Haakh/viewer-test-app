@@ -9,6 +9,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "appcenter": "^1.6.0",
+    "appcenter-analytics": "^1.6.0",
+    "appcenter-crashes": "^1.6.0",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-calendars": "^1.19.4",
@@ -52,6 +55,10 @@
       "\\.snap$",
       "<rootDir>/node_modules/"
     ],
-    "cacheDirectory": ".jest/cache"
+    "cacheDirectory": ".jest/cache",
+    "setupFiles": [
+      "./node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
+      "./node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
+    ]
   }
 }
