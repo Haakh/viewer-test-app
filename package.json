@@ -1,22 +1,69 @@
 {
-  "name": "viewer",
+  "name": "scheduler-react-native",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest"
   },
   "dependencies": {
+    "fbjs": "0.8.17",
+    "immutable": "3.8.2",
+    "moment": "^2.22.2",
     "react": "16.4.1",
-    "react-native": "0.56.0"
+    "react-native": "0.56.0",
+    "react-native-calendars": "^1.19.4",
+    "react-native-firebase": "4.3.4",
+    "react-native-image-crop-picker": "^0.20.3",
+    "react-native-keyboard-aware-scroll-view": "^0.6.0",
+    "react-navigation": "2.6.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-observable": "1.0.0",
+    "rxjs": "6.2.1",
+    "typesafe-actions": "2.0.4"
   },
   "devDependencies": {
-    "babel-jest": "23.4.0",
-    "babel-preset-react-native": "^5",
-    "jest": "23.4.1",
-    "react-test-renderer": "16.4.1"
+    "@babel/core": "7.0.0-beta.47",
+    "@types/jest": "23.1.4",
+    "@types/react": "16.4.6",
+    "@types/react-native": "0.55.28",
+    "@types/react-navigation": "2.0.10",
+    "@types/react-redux": "6.0.3",
+    "@types/react-test-renderer": "16.0.1",
+    "babel-core": "6.26.3",
+    "babel-jest": "23.2.0",
+    "babel-preset-react-native": "5",
+    "jest": "23.3.0",
+    "prop-types": "15.6.2",
+    "react-native-dotenv": "https://github.com/adamivancza/react-native-dotenv",
+    "react-native-typescript-transformer": "1.2.10",
+    "react-test-renderer": "16.4.1",
+    "redux-devtools-extension": "^2.13.5",
+    "ts-jest": "23.0.0",
+    "tslint": "5.10.0",
+    "tslint-config-airbnb": "5.9.2",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "2.9.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest/cache"
   }
 }
