@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Root from './src/Root';
+import AppRouter from './src/containers/AppRouter';
 
 export default class App extends React.Component {
   render() {
-    return <Root />;
+    return <AppRouter />;
   }
 }
