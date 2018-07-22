@@ -39,7 +39,10 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleDirectories": ["node_modules", "src"],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
     "globals": {
       "ts-jest": {
         "tsConfigFile": "tsconfig.test.json",
@@ -62,7 +65,7 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-navigation|react|react-native-keyboard-aware-scroll-view/)"
-    ],    
+    ],
     "cacheDirectory": ".jest/cache",
     "setupFiles": [
       "./node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
